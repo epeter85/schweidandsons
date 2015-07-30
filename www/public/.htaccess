@@ -1,0 +1,15 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+  RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+  RewriteRule ^products/steakhouse /products/cab-all-american [R=301,L]
+  RewriteRule ^products/all-american /products/cab-all-american [R=301,L]
+  RewriteRule ^products/custom-blend /products/cab-custom-blend [R=301,L]
+   RewriteRule ^products/angus-heritage /products/the-all-natural [R=301,L]
+
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.*)$ index.php [QSA,L]
+</IfModule>

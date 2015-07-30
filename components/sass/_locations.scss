@@ -1,0 +1,274 @@
+// _locations.scss
+// =================
+
+.locations-media-query{
+    
+   // position: fixed;
+    
+    .loc-header{
+        width: 100%;
+    }
+    
+    .no-pad-right {
+        padding-right: 0;
+    }
+    .no-pad-left{
+        padding-left: 0;
+    }
+    
+    #map-canvas{
+
+        //background-color: black;
+
+    }
+
+        
+   /* .loading-text{
+        position: absolute; 
+        text-align: center;
+        //margin-top: 10em;
+        font-family: 'Arial';
+        color: black;
+
+    }*/
+    
+    
+    .hr { 
+        //position: absolute; 
+        display: block;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+       // margin-left: auto;
+       // margin-right: auto;
+        border-width: 1px;
+        border-color: white;
+        opacity:.5;
+        width: 80%;
+        //margin-left: 10px;
+    }
+    
+    hr.style-two {
+        border: 0;
+        height: 1px;
+        background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+        background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+        background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+        background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    }
+    
+
+
+    @media #{$small-up} { 
+
+    }
+
+//@media (max-width: 800px) {
+  @media #{$small-only} { 
+        
+
+        .loc-header{
+            position: absolute; 
+            top: 0;
+            height: 2em;
+            z-index: 10;
+        }
+        
+        .loc-title{ 
+            text-align: center;
+            font-size: 1.2em;
+            top:5px;
+        }
+        
+        #loc-subtitle{   
+            display:none;
+        }
+    
+        .loc-zip{
+            display: inline-block;
+           height: 3em;
+           line-height: 2em;
+           margin-top: 2em;
+           margin-left: 25%;
+            //background-color: black;
+            width:80%;
+        }
+
+        #loc-zip-field{
+            display: inline-block;
+            font-family: 'Arial';
+            top:0;
+            
+        }
+        
+        #submit-button{
+            display: inline-block;
+            margin-left: -10px;
+            cursor: pointer;
+           
+        }
+
+        
+       #map-canvas{
+            width:100%;
+            z-index: 0;
+            //background-color: black;
+           opacity: 0;
+           top:0;
+        }
+        
+        #map-canvas img { 
+            max-width: none !important; 
+            height: auto !important; 
+            background: none !important;
+            border: 0 !important;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+        
+        .loc-footer{
+            position: absolute; 
+            width:100%;
+            height:4em;
+            bottom:0;
+            background-color: black;
+        }
+        
+        .mobile-search-result{
+            position: relative;
+            top:.5em;
+            line-height: 1.3em;
+            font-family: 'Arial';
+            font-size: .8em;
+            width:100;
+        }
+        
+        .mobile-phone{
+            //display: inline-block;
+            width: 3.5em;
+            height: 2.5em;
+            position: absolute; 
+            background-repeat:no-repeat;
+            cursor : pointer;
+            right: 10px;
+            bottom: 20px;
+            z-index: 100;
+        }
+        
+        .desktop-results{
+            visibility: hidden;
+        }
+        
+        .textButton {
+            cursor: pointer;
+        }
+        
+        /*.loc-footer{
+            visibility: hidden;
+        }*/
+        
+ 
+    }
+
+//@media (min-width: 801px) {
+@media #{$medium-up} { 
+        
+        .loc-header{
+            margin-top: 6em;
+        }
+        
+        .loc-title{            
+            font-size: 1.2em;
+            line-height: 3em;;
+            top:-.75em;
+            padding-left: 40px;
+            //position:fixed;
+           // overflow: hidden;
+            //position: absolute;
+        }
+        
+        #loc-subtitle{   
+            font-family: 'Arial';
+            font-size: .8em;
+            //line-height: .8em;;
+             margin-left: 15px;
+        }
+        .loc-zip{
+            position: fixed;
+          // display: inline-block;
+           height: 4em;
+           line-height: 4em;
+           margin-left: 5px;
+        }
+        
+        #loc-zip-field{
+            position: absolute;
+            width:70%;
+           // display: inline-block;
+            font-family: 'Arial';
+            
+        }
+        
+        #submit-button{
+            position: absolute;
+           // display: inline-block;
+            margin-left: 65px;
+            cursor: pointer;
+           
+        }
+    
+        .desktop-results{
+            //display: inline-block;
+            //position: absolute;
+            font-family: 'Arial';
+            font-size: .8em;
+            line-height: 1.5em;
+            margin-left: 10px;
+            margin-top: 3em;
+            position: fixed;
+            overflow: scroll;
+        }
+        
+        #map-canvas{
+            width:100%;
+            height:100%;
+            z-index: 0;
+            background-color: white;
+           //opacity: 0;
+           top:0;
+            //position:fixed;
+            
+        }
+        
+        #map-canvas img { 
+            max-width: none !important; 
+            height: auto !important; 
+            background: none !important;
+            border: 0 !important;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+        
+        .mobile-phone{
+            visibility: hidden;
+        }
+        
+        .loc-title{
+            text-align: left;   
+        }
+        
+        .loc-footer{
+            visibility: hidden;
+        }
+
+    }
+    @media #{$medium-only} { }
+
+    @media #{$large-up} { }
+    @media #{$large-only} { }
+
+    @media #{$xlarge-up} { }
+    @media #{$xlarge-only} { }
+
+    @media #{$xxlarge-up} { }
+    @media #{$xxlarge-only} { }
+}

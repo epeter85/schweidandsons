@@ -1,0 +1,75 @@
+// _connect.scss
+// =================
+
+
+.hline { 
+    width:100%; 
+    height:2px; 
+    background: #fff;
+}
+
+.address{
+    display: block;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    
+    
+}
+
+#email{
+    display: block;
+    text-align: center;
+    padding-top: 1em;
+    
+    
+}
+
+
+.connect-media-query{
+    
+    @media #{$small-up} { }
+    @media #{$small-only} { 
+        
+        .underline{top: 7.2em};
+        .connect-text{padding-top: 2em;}
+        h1 {padding-bottom: .3em;
+        font-size: 3.5em;}
+        .address{font-size: 1.1em;};
+        #email{font-size: 1.1em;};
+        
+        .underline{width:10.5em;};
+        
+       /* .icon-instagram{width:5.5em;};
+        .icon-facebook{width:5.5em;};
+        .icon-twitter{width:5.5em;};*/
+
+        
+    }
+
+    @media #{$medium-up} { 
+        
+        .underline{top: 10.3em};
+        .connect-text{padding-top: 4em;}
+        h1 {padding-bottom: .3em;}
+        .address{font-size: 1.1em;};
+        #email{font-size: 1.1em;};
+        .underline{width:12em;};
+        
+    }
+    @media #{$medium-only} { }
+
+    @media #{$large-up} { 
+        
+        .address{font-size: 1.3em;};
+        #email{font-size: 1.3em;};
+    
+    }
+    @media #{$large-only} { }
+
+    @media #{$xlarge-up} { }
+    @media #{$xlarge-only} { }
+
+    @media #{$xxlarge-up} { }
+    @media #{$xxlarge-only} { }
+}

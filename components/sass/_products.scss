@@ -1,0 +1,605 @@
+// _products.scss
+// =================
+
+
+.products-media-query{
+
+
+@media #{$small-up} { }
+@media #{$small-only} { 
+    
+    .mobileHitArea{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        z-index: 1;
+    }
+    
+    .mobileClickThru {
+        position: absolute;
+        width: 100%;
+        height: 100%;    
+    }
+        
+    .content figure {
+
+        width: 100%;
+        position: absolute;
+        top: 5.5em; /*collapsed height*/ /*change ems*/
+        height: 5.5em;  /*expanded height*/ /*change ems*/
+        box-shadow: 0 0 0 1.5px rgba(255,255,255,0.5); /*white border*/
+
+    }
+
+    .content > figure {
+        position: relative;
+        top: 0px !important; /* starting placement y value */
+
+    }
+
+    .content input { /* essentially the hit area of the collapsed item */
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 5.5em; /*change ems*/
+        cursor: pointer;
+        border: 0;
+        padding: 0;
+        -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        filter: alpha(opacity=0);
+        opacity: 0;
+        z-index: 1;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+
+    .content figcaption { /* rollover foreground */
+        width: 100%;
+        height: 5.5em;
+        background: rgba(0, 0, 0, .7); 
+        position: absolute;
+        top: 0px;
+        //box-shadow: 0 0 0 1.5px rgba(255,255,255,0.5); /*white border*/
+    }
+
+
+
+    .content figcaption span { /* box text */
+        position: absolute;
+        right: 0;
+        left: 0;
+        text-align: center;
+        opacity: 0;
+        color: #fff;
+    } 
+
+
+    
+    .content input:checked + figcaption,
+    .content input:checked:hover + figcaption{ 
+        /*background: rgba(87, 73, 81, 0.0);*/
+    }
+
+
+
+  /* .content #ia-selector-last:checked + figcaption span {
+        -webkit-transition-delay: 0.3s;
+        -moz-transition-delay: 0.3s;
+        -o-transition-delay: 0.3s;
+        -ms-transition-delay: 0.3s;
+        transition-delay: 0.3s;
+    }*/
+
+
+    .content input:checked ~ figure input{
+        z-index: 1;
+    }
+
+    .menu-title{
+        position: relative;
+        font-size: 1.7em;
+        top:7px;
+       // vertical-align: middle;
+       // line-height: 1.7em;
+    }
+    
+    .the-all-natural{
+
+        width: 100%;
+        height: 100%;
+
+    }
+
+
+    .grass-fed{
+
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .one-percenter{
+
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .butchers{
+
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .abc{
+
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .cab-custom-blend{
+        
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .prime-burger{
+
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .signature-series{
+
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .steakhouse{
+
+        width: 100%;
+       // height: 100%;
+        //height: 6.5em !important;
+
+    }
+    
+    .menu-filler{
+        
+        visibility: hidden;
+
+
+        }
+        
+    
+}
+
+    @media #{$medium-up} { 
+        
+        .content figure {
+
+            position: absolute;
+            top: 6.5em; /*collapsed height*/ /*change ems*/
+            height: 6.5em;  /*expanded height*/ /*change ems*/
+            width: 100%;
+            right:0;
+            //margin-left: 15px;
+
+            -webkit-transition: all 0.5s ease-in-out;  /* collapse animation speed */
+            -moz-transition: all 0.5s ease-in-out;
+            -o-transition: all 0.5s ease-in-out;
+            -ms-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out;
+
+        }
+
+        .content > figure {
+            position: relative;
+            top: 0 !important; /* starting placement y value */
+        }
+
+        .content input { /* essentially the hit area of the collapsed item */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 6.5em; /*change ems*/
+            cursor: pointer;
+            border: 0;
+            padding: 0;
+            -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+            filter: alpha(opacity=0);
+            opacity: 0;
+            z-index: 1;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+        }
+        .content input:checked{ /* collapses hit area when checked */
+            width: 5px; /*change ems*/
+            left: auto;
+            right: 0px;
+        }
+        .content input:checked ~ figure { /* expands next item down */
+            -webkit-transition: all 0.5s ease-in-out;
+            -moz-transition: all 0.5s ease-in-out;
+            -o-transition: all 0.5s ease-in-out;
+            -ms-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out;
+            top: 13em; 
+        }
+
+        .content figcaption { /* rollover foreground */
+            width: 100%;
+            height: 6.5em;
+            background: rgba(0, 0, 0, 0.7); 
+            position: absolute;
+            top: 0px;
+            left:0;
+            -webkit-transition: all 0.5s ease-in-out;
+            -moz-transition: all 0.5s ease-in-out;
+            -o-transition: all 0.5s ease-in-out;
+            -ms-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out;
+            box-shadow: 0 0 0 1.5px rgba(255,255,255,0.5); /*white border*/
+          
+        }
+
+        .content figcaption span { /* box text */
+            position: absolute;
+            right: 0; /*change ems*/
+            left: 0; /*change ems*/
+            text-align: center;
+            opacity: 0;
+            top: 8em;
+            color: #fff;
+        }
+
+        .content input:checked + figcaption,
+       /* .content input:checked:hover + figcaption{
+            background: rgba(87, 73, 81, 0.0);
+            height:13em;
+        }*/
+        
+        .itemRollOver input:checked:hover + figcaption{ /* set foreground black to  0%*/
+            background: rgba(87, 73, 81, 0.0);
+            height:13em;
+        }
+        
+        /*.content input:hover + figcaption > background {
+            opacity: 1;
+        }*/
+        
+        .itemRollOver input:hover + figcaption > background {
+            opacity: 1;
+        }
+        
+        .content input:checked + figcaption > background {
+            opacity:1;
+        }
+
+        .content input:checked + figcaption span {
+            -webkit-transition: all 0.5s ease-in-out 0.5s;
+            -moz-transition: all 0.5s ease-in-out 0.5s;
+            -o-transition: all 0.5s ease-in-out 0.5s;
+            -ms-transition: all 0.5s ease-in-out 0.5s;
+            transition: all 0.5 ease-in-out 0.5s;
+            -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=99)";
+            filter: alpha(opacity=99);
+            opacity: 1;
+        }
+
+
+        .content #ia-selector-last:checked + figcaption span {
+            -webkit-transition-delay: 0.3s;
+            -moz-transition-delay: 0.3s;
+            -o-transition-delay: 0.3s;
+            -ms-transition-delay: 0.3s;
+            transition-delay: 0.3s;
+        }
+
+
+       /* .content input:hover ~ figcaption {
+           background: rgba(0, 0, 0, 0.0);
+        }*/
+        
+        .itemRollOver input:hover ~ figcaption {
+           background: rgba(0, 0, 0, 0.0);
+        }
+
+        .content input:checked ~ figure input{
+            z-index: 1;
+        }
+
+        .menu-title{font-size: 2.4em;}
+
+        .cow-1{
+            display:inline-block;
+            position: relative;
+            top: 25px;
+            left: 7px;
+            background-size:100px;
+            width:100px;
+            height:64px;
+           /* margin:0 20px;*/
+            background-position: 0 64px;
+            background-image:url(../images/products/cow-sprite.png);
+        }
+        .cow-2{
+            display:inline-block;
+            position: relative;
+            top: 25px;
+            left: 7px;
+            background-size:100px;
+            width:100px;
+            height:64px;
+           /* margin:0 20px;*/
+            background-image:url(../images/products/cow-sprite.png);
+            background-position: 0 128px;
+        }
+        .cow-3{
+            display:inline-block;
+            position: relative;
+            left: 5px;
+            top: 25px;
+            background-size:100px;
+            width:100px;
+            height:64px;
+            margin:0 5px;
+            background-image:url(../images/products/cow-sprite.png);
+            background-position: 0 192px;
+        }
+        .cow-4{
+            display:inline-block;
+            position: relative;
+            left: 5px;
+            top: 25px;
+            background-size:100px;
+            width:100px;
+            height:64px;
+            margin:0 5px;
+            background-image:url(../images/products/cow-sprite.png);
+            background-position: 0 256px;
+        }
+        .cow-5{
+            display:inline-block;
+            position: relative;
+            left: 5px;
+            top: 25px;
+            background-size:100px;
+            width:100px;
+            height:64px;
+            margin:0 5px;
+            background-image:url(../images/products/cow-sprite.png);
+            background-position: 0 0;
+        }
+
+        #desc-txt{
+          position: relative;
+          // vertical-align: top;
+           // margin-top: 
+           //top:100px;
+            //margin-top: -100px:
+            bottom: 50px !important;
+            font-size: 1em;
+           // background-color: black;
+        }
+
+        #products-links {
+            position: relative;
+            top: -20px;
+            font-size: .8em;
+        }
+
+        #read-more{
+            position: relative;
+            top: -20px;
+        }
+
+        .the-all-natural {
+
+            background-image: url('../images/products/angus-heritage-menu-bg.jpg');
+            position: absolute; 
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-position: center; 
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            z-index: -10;
+            -webkit-transition: all 0.2s linear;
+            -moz-transition: all 0.2s linear;
+            -o-transition: all 0.2s linear;
+            -ms-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+        }
+
+
+        .grass-fed{
+
+            background-image: url('../images/products/grass-fed-menu-bg.jpg');
+            position: absolute; 
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-position: center; 
+            width: 100%;
+            height: 100%;
+                        opacity: 0;
+            z-index: -10;
+            -webkit-transition: all 0.2s linear;
+            -moz-transition: all 0.2s linear;
+            -o-transition: all 0.2s linear;
+            -ms-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+        }
+
+        .one-percenter{
+
+            background-image: url('../images/products/one-percenter-menu-bg.jpg');
+            position: absolute; 
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-position: center; 
+            width: 100%;
+            height: 100%;
+                        opacity: 0;
+            z-index: -10;
+            -webkit-transition: all 0.2s linear;
+            -moz-transition: all 0.2s linear;
+            -o-transition: all 0.2s linear;
+            -ms-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+
+        }
+
+        .butchers{
+
+            background-image: url('../images/products/butchers-menu-bg.jpg');
+            position: absolute; 
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-position: center; 
+            width: 100%;
+            height: 100%;
+                        opacity: 0;
+            z-index: -10;
+            -webkit-transition: all 0.2s linear;
+            -moz-transition: all 0.2s linear;
+            -o-transition: all 0.2s linear;
+            -ms-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+
+        }
+        
+
+        .abc{
+
+            background-image: url('../images/products/abc-menu-bg.jpg');
+            position: absolute; 
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-position: center; 
+            width: 100%;
+            height: 100%;
+                        opacity: 0;
+            z-index: -10;
+            -webkit-transition: all 0.2s linear;
+            -moz-transition: all 0.2s linear;
+            -o-transition: all 0.2s linear;
+            -ms-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+
+        }
+
+        .cab-custom-blend{
+
+            background-image: url('../images/products/custom-menu-bg.jpg');
+            position: absolute; 
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-position: center; 
+            width: 100%;
+            height: 100%;
+                        opacity: 0;
+            z-index: -10;
+            -webkit-transition: all 0.2s linear;
+            -moz-transition: all 0.2s linear;
+            -o-transition: all 0.2s linear;
+            -ms-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+
+        }
+            
+        .prime-burger{
+
+            background-image: url('../images/products/prime-burger-menu-bg.jpg');
+            position: absolute; 
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-position: center; 
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            z-index: -10;
+            -webkit-transition: all 0.2s linear;
+            -moz-transition: all 0.2s linear;
+            -o-transition: all 0.2s linear;
+            -ms-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+
+        }
+
+        .signature-series{
+
+            background-image: url('../images/products/signature-series-menu-bg.jpg');
+            position: absolute; 
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-position: center; 
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            z-index: -10;
+            -webkit-transition: all 0.2s linear;
+            -moz-transition: all 0.2s linear;
+            -o-transition: all 0.2s linear;
+            -ms-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+            
+
+        }
+
+        .cab-all-american{
+
+            background-image: url('../images/products/steakhouse-menu-bg.jpg');
+            position: absolute; 
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-position: center; 
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            z-index: -10;
+            -webkit-transition: all 0.2s linear;
+            -moz-transition: all 0.2s linear;
+            -o-transition: all 0.2s linear;
+            -ms-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+            
+        }
+        
+        .offset-30px{position: relative; max-width:100%; margin-left: -30px;}
+        .offset35px{position: relative; max-width:100%; margin-left: 35px;}
+        .offset15px{position: relative; max-width:100%; margin-left: 15px;}
+        .offset20px{position: relative; max-width:100%; margin-left: 20px;}
+        .offset10px{position: relative; max-width:100%; margin-left: 10px;}
+        .offset-10px{position: relative; max-width:100%; margin-left: -10px;}
+        .offset-18px{position: relative; max-width:100%; margin-left: -18px;}
+        .offset-25px{position: relative; max-width:100%; margin-left: -25px;}
+        
+
+        
+
+    
+    
+    }
+    @media #{$medium-only} { }
+
+    @media #{$large-up} { }
+    @media #{$large-only} { }
+
+    @media #{$xlarge-up} { }
+    @media #{$xlarge-only} { }
+
+    @media #{$xxlarge-up} { }
+    @media #{$xxlarge-only} { }
+    
+}
+

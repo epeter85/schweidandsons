@@ -1,0 +1,25 @@
+// style.scss
+// ==============
+ 
+//Compass imports
+//@import "compass";
+
+//Foundation imports
+@import "settings";
+@import "foundation";
+
+//Core partials
+@import "normalize";
+@import "fonts";
+@import "mixins";
+@import "global";
+@import "heritage";
+@import "product";
+@import "connect";
+@import "animations";
+@import "products";
+@import "home";
+@import "locations";
+
+
+// JS partials

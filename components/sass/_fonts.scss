@@ -1,0 +1,23 @@
+// _fonts.scss
+// =================
+
+@font-face {
+  font-family: 'IndustryIncBase';
+  src: url('../webfonts/industry_inc_base-webfont.eot'); /* IE 5-8 */ 
+  src: local('☺'),             /* sneakily trick IE */
+        url('../webfonts/industry_inc_base-webfont.woff') format('woff'),    /* FF 3.6, Chrome 5, IE9 */
+        url('../webfonts/industry_inc_base-webfont.ttf') format('truetype'), /* Opera, Safari */
+        url('../webfonts/industry_inc_base-webfont.svg#font') format('svg'); /* iOS */
+}
+
+@font-face {
+  font-family: 'Manus';
+  src: url('../webfonts/manus-webfont.eot'); /* IE 5-8 */ 
+  src: local('☺'),             /* sneakily trick IE */
+        url('../webfonts/manus-webfont.woff') format('woff'),    /* FF 3.6, Chrome 5, IE9 */
+        url('../webfonts/manus-webfont.ttf') format('truetype'), /* Opera, Safari */
+        url('../webfonts/manus-webfont.svg#font') format('svg'); /* iOS */
+}
+
+
+$activeState: #747474;

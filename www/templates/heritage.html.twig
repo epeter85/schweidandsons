@@ -1,0 +1,46 @@
+{% extends "_layout.html.twig" %}
+
+{% block title %}Schweid &amp; Sons - Heritage{% endblock title %}
+
+    {% block google %}
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="Schweid & Sons">
+    <meta itemprop="description" content="Our passion is carried on with a single-minded dedication to producing the best tasting, highest quality burger">
+    <meta itemprop="image" content="{{ siteUrl('images/share/home-GO.jpg') }}">
+    {% endblock %}
+
+    {% block twitter %}
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="product">
+    <meta name="twitter:site" content="@publisher_handle">
+    <meta name="twitter:title" content="Schweid & Sons">
+    <meta name="twitter:description" content="Our passion is carried on with a single-minded dedication to producing the best tasting, highest quality burger">
+    <meta name="twitter:creator" content="@author_handle">
+    <meta name="twitter:image" content="{{ siteUrl('images/share/home-TW.jpg') }}">
+    {% endblock %}
+    
+    {% block facebook %}
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Schweid & Sons" />
+    <meta property="og:type" content="product" />
+    <meta property="og:url" content="{{siteUrl}}" /> 
+    <meta property="og:image" content="{{ siteUrl('images/share/home-FB.jpg') }}" />
+    <meta property="og:description" content="Our passion is carried on with a single-minded dedication to producing the best tasting, highest quality burger" /> 
+    <meta property="og:site_name" content="Schweid & Sons" />
+    <!--<meta property="fb:admins" content="Facebook numeric ID" /> -->
+    {% endblock %}
+
+{% block content %}
+<div class="heritage-media-query">
+    <div id="black-background"></div>
+    
+    <div class="small-10 small-centered medium-7 large-6 columns heritage-text">            
+                <div class="underline"><img src="{{ siteUrl('images/underline.png') }}" alt="underline" /></div>
+                <h1>Heritage</h1>
+                
+                <p>In the late 1800s, Harry Schweid started selling high quality meats to butchers and restaurants in New York City’s Lower East Side. By the 1930s, his son Sam had his own business in Harlem, selling the best meat around. In 1978, we focused our expertise on one thing - ground beef. Today, that passion is carried on with a single-minded dedication to producing the best tasting, highest quality burger.</p>
+                <p>As Sam always said, if you put only good meat into your burgers, only good things will come out.</p>
+                <p>We hope you agree.</p>
+        </div>
+</div>
+{% endblock %}

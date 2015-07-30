@@ -1,0 +1,48 @@
+// _home.scss
+// =================
+
+
+.home-media-query{
+    
+    @media #{$small-up} { }
+    @media #{$small-only} { 
+        
+        .main-logo {
+            padding-top: 3em;
+            width:15em;
+            height:15em;
+            margin-left: auto;
+            margin-right: auto;
+            opacity:0;
+        }
+        
+        
+    }
+
+    @media #{$medium-up} { 
+        
+        .main-logo {
+            padding-top: 9em;
+            width:15em;
+            height:15em;
+            margin-left: auto;
+            margin-right: auto;
+            opacity:0;
+        }
+
+        
+    }
+    @media #{$medium-only} { }
+
+    @media #{$large-up} { 
+
+    
+    }
+    @media #{$large-only} { }
+
+    @media #{$xlarge-up} { }
+    @media #{$xlarge-only} { }
+
+    @media #{$xxlarge-up} { }
+    @media #{$xxlarge-only} { }
+}

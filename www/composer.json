@@ -1,0 +1,17 @@
+{
+  "name": "inkboard",
+  "require": {
+    "slim/slim": "2.*",
+    "twig/twig": "v1.15.1",
+    "slim/views": "0.1.*",
+    "keboola/csv": "1.1.3",
+    "symfony/yaml": "v2.5.2"
+  },
+  "require-dev": {
+  },
+  "autoload": {
+    "psr-0": {
+     "Schweid": "src"
+    }
+  }
+}

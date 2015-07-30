@@ -1,0 +1,44 @@
+{% extends "_layout.html.twig" %}
+
+{% block title %}Schweid &amp; Sons{% endblock title %}
+    
+    {% block keywords %}
+    {% endblock %}
+
+    {% block google %}
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="Schweid & Sons">
+    <meta itemprop="description" content="Our passion is carried on with a single-minded dedication to producing the best tasting, highest quality burger">
+    <meta itemprop="image" content="{{ siteUrl('images/share/home-GO.jpg') }}">
+    {% endblock %}
+
+    {% block twitter %}
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="product">
+    <meta name="twitter:site" content="@publisher_handle">
+    <meta name="twitter:title" content="Schweid & Sons">
+    <meta name="twitter:description" content="Our passion is carried on with a single-minded dedication to producing the best tasting, highest quality burger">
+    <meta name="twitter:creator" content="@author_handle">
+    <meta name="twitter:image" content="{{ siteUrl('images/share/home-TW.jpg') }}">
+    {% endblock %}
+    
+    {% block facebook %}
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Schweid & Sons" />
+    <meta property="og:type" content="product" />
+    <meta property="og:url" content="{{siteUrl}}" /> 
+    <meta property="og:image" content="{{ siteUrl('images/share/home-FB.jpg') }}" />
+    <meta property="og:description" content="Our passion is carried on with a single-minded dedication to producing the best tasting, highest quality burger" /> 
+    <meta property="og:site_name" content="Schweid & Sons" />
+    <!--<meta property="fb:admins" content="Facebook numeric ID" /> -->
+    {% endblock %}
+
+{% block content %}
+<div class='home-media-query'>
+        <div class="main-logo" >
+           <div class="small-12 small-centered columns">
+               <img src="{{ siteUrl('images/logo.png') }}" alt="Schweid & Sons logo">
+            </div>
+        </div>
+</div>
+{% endblock %}

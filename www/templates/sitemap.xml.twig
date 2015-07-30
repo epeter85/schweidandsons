@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>{{ siteUrl('/') }}</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>{{ siteUrl('/products') }}</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>{{ siteUrl('/heritage') }}</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>{{ siteUrl('/connect') }}</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>{{ siteUrl('/locations') }}</loc>
+    <priority>0.5</priority>
+  </url>
+  {% for product in products %}
+    <url>
+      <loc>{{ siteUrl(product.path) }}</loc>
+      <priority>0.7</priority>
+    </url>
+  {% endfor %}
+</urlset>

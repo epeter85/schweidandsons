@@ -1,0 +1,36 @@
+// _heritage.scss
+// =================
+
+
+.heritage-media-query{
+    
+    @media #{$small-up} { }
+    @media #{$small-only} { 
+        
+        .underline{top: 7.4em};
+        .heritage-text{padding-top: 2em;}
+        h1 {padding-bottom: .25em; font-size: 3.5em;}
+        .underline{width:11em;};
+    
+    }
+
+    @media #{$medium-up} { 
+        
+        #black-background {visibility: hidden;}
+        .underline{top: 10em};
+        .heritage-text{padding-top: 4em;}
+        h1 {padding-bottom: .25em;}
+        .underline{width:12em;};
+        
+    }
+    @media #{$medium-only} { }
+
+    @media #{$large-up} { }
+    @media #{$large-only} { }
+
+    @media #{$xlarge-up} { }
+    @media #{$xlarge-only} { }
+
+    @media #{$xxlarge-up} { }
+    @media #{$xxlarge-only} { }
+}

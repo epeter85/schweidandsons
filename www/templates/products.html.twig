@@ -1,0 +1,60 @@
+{% extends "_layout.html.twig" %}
+
+{% block title %}Schweid &amp; Sons - Products{% endblock title %}
+   
+    {% block keywords %}
+    {% endblock %}
+    
+    {% block google %}
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="Schweid & Sons">
+    <meta itemprop="description" content="Our passion is carried on with a single-minded dedication to producing the best tasting, highest quality burger">
+    <meta itemprop="image" content="{{ siteUrl('images/share/home-GO.jpg') }}">
+    {% endblock %}
+
+    {% block twitter %}
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="product">
+    <meta name="twitter:site" content="@publisher_handle">
+    <meta name="twitter:title" content="Schweid & Sons">
+    <meta name="twitter:description" content="Our passion is carried on with a single-minded dedication to producing the best tasting, highest quality burger">
+    <meta name="twitter:creator" content="@author_handle">
+    <meta name="twitter:image" content="{{ siteUrl('images/share/home-TW.jpg') }}">
+    {% endblock %}
+    
+    {% block facebook %}
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Schweid & Sons" />
+    <meta property="og:type" content="product" />
+    <meta property="og:url" content="{{siteUrl}}" /> 
+    <meta property="og:image" content="{{ siteUrl('images/share/home-FB.jpg') }}" />
+    <meta property="og:description" content="Our passion is carried on with a single-minded dedication to producing the best tasting, highest quality burger" /> 
+    <meta property="og:site_name" content="Schweid & Sons" />
+    <!--<meta property="fb:admins" content="Facebook numeric ID" /> -->
+    {% endblock %}
+
+{% block content %}
+<div class="products-media-query">
+    <div id='productItem' class='content itemRollOver'>
+        {% for product in products %}
+      
+				<figure>
+                    
+						<input type="radio" name="radio-set" />
+						<figcaption>
+                          <background class='{{ product.slug }}'></background> 
+						    <h1 class="menu-title">{{ product.name }}</h1>
+						  <span><a id="products-links" href="{{ siteUrl(product.path) }}"><div class='{{ product.offset }}'><div id="desc-txt">{{ product.desc1 }}<div class="{{ product.cow }}"></div>{{ product.desc2 }}</div></div><div id="read-more">read more</div></a></span>
+						</figcaption>				
+						<a href="{{ siteUrl(product.path) }}"><div class="mobileHitArea"></div></a>
+                
+    {% endfor %}
+                
+                </figure>
+        </div>
+  </div>
+{% endblock %}
+
+
+
+

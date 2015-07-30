@@ -1,0 +1,87 @@
+{% extends "_layout.html.twig" %}
+
+{% block title %}Schweid &amp; Sons - Locations{% endblock title %}
+    
+    {% block keywords %}
+    {% endblock %}
+
+    {% block google %}
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="Schweid & Sons">
+    <meta itemprop="description" content="Our passion is carried on with a single-minded dedication to producing the best tasting, highest quality burger">
+    <meta itemprop="image" content="{{ siteUrl('images/share/home-GO.jpg') }}">
+    {% endblock %}
+
+    {% block twitter %}
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="product">
+    <meta name="twitter:site" content="@publisher_handle">
+    <meta name="twitter:title" content="Schweid & Sons">
+    <meta name="twitter:description" content="Our passion is carried on with a single-minded dedication to producing the best tasting, highest quality burger">
+    <meta name="twitter:creator" content="@author_handle">
+    <meta name="twitter:image" content="{{ siteUrl('images/share/home-TW.jpg') }}">
+    {% endblock %}
+    
+    {% block facebook %}
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Schweid & Sons" />
+    <meta property="og:type" content="product" />
+    <meta property="og:url" content="{{siteUrl}}" /> 
+    <meta property="og:image" content="{{ siteUrl('images/share/home-FB.jpg') }}" />
+    <meta property="og:description" content="Our passion is carried on with a single-minded dedication to producing the best tasting, highest quality burger" /> 
+    <meta property="og:site_name" content="Schweid & Sons" />
+    <!--<meta property="fb:admins" content="Facebook numeric ID" /> -->
+    {% endblock %}
+
+{% block content %}
+<div class="locations-media-query">
+   <div id="black-background"></div>
+   
+ <div class="row loc-header no-pad-left no-pad-right">
+      <div class="small-9 small-centered medium-11 columns loc-title">store locator<span id='loc-subtitle'>Enter your zip code to find Schweid &amp; Sons products near you.</span></div>
+ </div>  
+
+   <div class="row">
+           
+            <div class="small-block-grid-2 medium-3 medium-push-8 columns loc-zip">
+             
+                     <li><form data-abide>
+                      <input id='loc-zip-field' type='number' placeholder="Zip Code"  pattern="(?=^.{5,5}$)" required pattern="^[0-9]+$" />
+                      <small class="error">Please enter a numeric 5 digit zip code</small>
+                    </form></li>
+                    <li><img id='submit-button' src="{{ siteUrl('images/search-icon.png') }}" alt="" /></li>
+            
+                    
+                    <div class='desktop-results'></div>
+                    
+            </div>
+
+        
+         <div class='small-12 medium-7 medium-pull-4 columns no-pad-left no-pad-right'>
+             
+            <div id="map-canvas"></div>
+             
+        </div>
+    </div>
+    
+
+   
+
+        
+       <!-- <div class='row'>
+           <div class="small-11 small-centered columns loading-text">Map loading</div>
+        </div>-->
+    
+     
+
+     <div class="row loc-footer">
+     
+          <div class="small-10 columns mobile-search-result"></div>
+          
+        </div>
+        
+        <div class="mobile-phone"><img src="{{ siteUrl('images/phone.png') }}" alt="" /></div>
+</div> 
+
+
+{% endblock %}

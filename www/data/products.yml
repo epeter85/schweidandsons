@@ -1,0 +1,104 @@
+# Please add as many properties as you need.
+-
+  slug: the-all-natural
+  name: The All Natural
+  desc1: Family farm raised antibiotic, hormone
+  desc2: and steroid-free Angus beef.
+  offset: offset-30px
+  cow: cow-2
+  description: With a family that started in the meat business over 75 years ago, we’re proud to say that we make nothing but the very best burger. So it’s with pride that we introduce the All Natural Blend, a burger made with fresh, all natural Angus based on higher genetic standards. Our cattle are Certified Humane, both raised and handled, and have never been exposed to antibiotics, hormones or steroids, ever. We use only domestic cattle, source verified to the ranch, using a network of 250 family farms across the United States. Schweid and Sons Natural Angus is a blend with less water, and truer beef flavor.
+  short-description: Introducing the All Natural Blend, a burger made with fresh, all natural Angus based on higher genetic standards. Our cattle are Certified Humane, both raised and handled, and have never been exposed to antibiotics, hormones or steroids, ever.
+  packaging: 'images/packaging/package-the-all-natural.png'
+  keywords: 'Antibiotic-Free, Hormone-Free, Steroid-Free, All Natural, Heritage Blend, Chuck, Rib, Sirloin, Round, Burgers, Hamburgers, Schweid and Sons, Burger Maker, Ground Beef, The Very Best Burger, Purveyors, Butcher, Gourmet Burger, Cheeseburgers, Blend, Grind, Choice, Prime, Certified Humane'
+-
+  slug: grass-fed
+  name: The Grass Fed Standard
+  desc1: Humanely handled, grass fed cattle
+  desc2: make for a deliciously healthy burger.
+  offset: offset35px
+  cow: cow-5
+  description: We call it the Grass Fed Standard for a reason. It’s a new standard in grass fed burgers. Using select genetics as a source for the cattle, we work with American family farms, who feed their cattle an all forage-based diet. Never any grain. They are raised and handled humanely at all times. This process of cattle production is good for the environment, the animals, and you, the one eating the supremely delicious burger. Like many of our cattle, our grass-fed cattle are never given synthetic hormones or sub-therapeutic antibiotics. This blend has higher amounts of Omega-3 essential fatty acids, CLA, beta carotene, and other essential nutrients, while being lower in saturated fats, calories and cholesterol making it healthier than the average beef blend. But most of all, it tastes amazing.
+  short-description: Using select genetics as a source for the cattle, we work with American family farms, who feed their cattle an all forage-based diet. Never any grain. They are raised and handled humanely at all times.
+  packaging: 'images/packaging/package-grass-fed.png'
+  keywords: 'Grass Fed, Healthy, Hormone-Free, Antibiotic-Free, Omega-3, CLA, Beta Carotene, Low Saturated Fat, Low Calories, Low Cholesterol, Chuck, Rib, Sirloin, Round, Burgers, Hamburgers, Schweid and Sons, Burger Maker, Ground Beef, The Very Best Burger, Purveyors, Butcher, Gourmet Burger, Cheeseburgers, Blend, Grind'
+-
+  slug: one-percenter
+  name: The One Percenter
+  desc1: Nothing but usda prime®, certified angus
+  desc2: beef® chuck. the top 1% of all beef.
+  offset: offset-18px
+  cow: cow-1
+  description: Only 3% of all the beef in America lives up to the strict specifications that qualify it as USDA Prime. Those specifications don’t just guarantee quality. They help ensure a better flavor. That’s why this burger is packed with a consistent flavor that will make you look like a master chef, no matter your skill level. You just cook it, and let the burger take care of the rest.
+  short-description: Only 3% of all the beef in America lives up to the strict specifications that qualify it as USDA Prime. Those specifications don’t just guarantee quality. They help ensure a better flavor.
+  packaging: 'images/packaging/package-one-percenter.png'
+  keywords: 'USDA Prime, Chuck, Burgers, Hamburgers, Schweid and Sons, Burger Maker, Ground Beef, The Very Best Burger, Purveyors, Butcher, Gourmet Burger, Cheeseburgers, Blend, Grind, Certified Angus Beef, Two Piece Boneless Chucks, High Marbling'
+-
+  slug: butchers
+  name: Butcher’s Blend
+  desc1: Our award winning formula gives
+  desc2: this burger a hearty steak flavor.
+  offset: offset10px
+  cow: cow-5
+  description: Our family started in the meat business in the 1930s. We have a passion for it that we find rare in the industry. That’s why we’re proud to introduce The Butcher’s Blend. Made from Midwestern Premium Black Angus Cattle, we use the same raw materials all year round, resulting in some of the highest marbling, and most consistent quality and flavor in every bite, at any time of the year.
+  short-description: Introducing The Butcher’s Blend, some of the highest marbling, and most consistent quality and flavor in every bite, at any time of the year.
+  packaging: 'images/packaging/package-butchers-blend.png'
+  keywords: 'High Marbling, Chuck, Rib, Sirloin, Round, Burgers, Hamburgers, Schweid and Sons, Burger Maker, Ground Beef, The Very Best Burger, Purveyors, Butcher, Gourmet Burger, Cheeseburgers, Blend, Grind, Steakburger'
+
+-
+  slug: abc
+  name: The A.B.C. Blend
+  desc1: Premium Angus Beef Chuck makes for our
+  desc2: most consistent quality and flavor.
+  offset: offset-10px
+  cow: cow-1
+  description: On the surface, A.B.C. stands for Angus Beef Chuck. But it’s not the only reason for naming this burger as we did. This is your no-frills, down to basics burger made from some of the finest premium black angus cattle the midwest has to offer. We use the same raw materials 52 weeks of the years, ensuring the most consistent quality and flavor in every bite, all year long.
+  short-description: On the surface, A.B.C. stands for Angus Beef Chuck. This is your no-frills, down to basics burger made from some of the finest premium black angus cattle the midwest has to offer.
+  packaging: 'images/packaging/package-abc-blend.png'
+  keywords: 'Burgers, Hamburgers, Schweid and Sons, Burger Maker, Ground Beef, The Very Best Burger, Purveyors, Butcher, Gourmet Burger, Cheeseburgers, Blend, Grind, Angus, Beef Premium Black, Chuck, Angus Ground Beef Chuck'
+-
+  slug: cab-custom-blend
+  name: The C.A.B Custom Blend
+  desc1:   A series of custom blends using nothing but
+  desc2: the best cuts of Certified Angus Beef®.
+  offset: offset-18px
+  cow: cow-4
+  description: |
+    Meeting the strict standards of Certified Angus Beef® isn’t easy. Only 25% of Angus cattle live up to the high standards, and less that 8% of all beef is considered worthy of this distinction. So it’s no surprise this class of beef is considered the world leader in taste and quality. And to bring the very best burger to you, we’ve created a whole series of customized blends using only premium cuts of Certified Angus Beef® for uniquely flavored burgers. It’s nothing but incredible tenderness and juiciness in every bite.
+    A series of custom blends using nothing but the best Certified Angus Beef®
+
+  short-description: This class of beef is considered the world leader in taste and quality. And to bring the best to store shelves, we’ve created our custom blend of CAB beef for a uniquely flavored burger.
+  packaging: 'images/packaging/package-the-cab-custom-blend.png'
+  keywords: 'Burgers, Hamburgers, Schweid and Sons, Burger Maker, Ground Beef, The Very Best Burger, Purveyors, Butcher, Gourmet Burger, Cheeseburgers, Blend, Grind, Certified Angus Beef, Chuck, Brisket, Certified Angus Beef, High Marbling, Hanger, Sirloin, Round, Short Rib'
+-
+  slug: prime-burger
+  name: The Prime Burger
+  desc1: This fresh USDA Prime® chuck burger
+  desc2: packs the most flavor into every bite.
+  offset: offset15px
+  cow: cow-1
+  description: Only 3% of all the beef in America lives up to the strict specifications that qualify it as USDA Prime. Those specifications don’t just guarantee quality. They help ensure a better flavor. That’s why this burger is packed with a consistent flavor that will make you look like a master chef, no matter your skill level. You just cook it, and let the burger take care of the rest.
+  short-description: This burger is packed with a consistent flavor that will make you look like a master chef, no matter your skill level. You just cook it, and let the burger take care of the rest.
+  packaging: 'images/packaging/package-prime-burger.png'
+  keywords: 'Burgers, Hamburgers, Schweid and Sons, Burger Maker, Ground Beef, The Very Best Burger, Purveyors, Butcher, Gourmet Burger, Cheeseburgers, Blend, Grind, USDA Prime, Chuck'
+-
+  slug: signature-series
+  name: The Signature Series: The Chuck Brisket
+  desc1: A juicy delicious burger perfected by
+  desc2: four generations of serious meat men.
+  offset: offset15px
+  cow: cow-3
+  description: In the late 1800s, Harry Schweid started selling high quality meats to butchers and restaurants in New York City’s Lower East Side. By the 1930s, his son Sam had his own business in Harlem, selling the best meat around. In 1978, we focused our expertise on one thing - ground beef. Today, that passion is carried on with a single-minded dedication to producing the best tasting, highest quality burger. And now, after over 100 years of experience, we’re introducing The Signature Series. With each burger in the series, we’ll take some of the best cuts around to produce a fresh, juicy, burger with enough flavor to satisfy even the most passionate burger lovers.
+  short-description: Introducing The Signature Series. With each burger in the series, we’ll take some of the best cuts around to produce a fresh, juicy, burger with enough flavor to satisfy even the most passionate burger lovers.
+  packaging: 'images/packaging/package-signature-series.png'
+  keywords: 'Burgers, Hamburgers, Schweid and Sons, Burger Maker, Ground Beef, The Very Best Burger, Purveyors, Butcher, Gourmet Burger, Cheeseburgers, Blend, Grind, Best Cuts Fresh, Juicy Burger, Chuck, Brisket, Hanger, Sirloin, Round, Short Rib'
+-
+  slug: cab-all-american
+  name: The C.A.B All American
+  desc1: 100%, Certified Angus Beef® ground chuck that
+  desc2: guarantees a tender, juicy, quality burger.
+  offset: offset-10px
+  cow: cow-1
+  description: The CAB All American is made with the idea of the classic American hamburger in mind. We use nothing but Certified Angus Beef® chuck to make a burger that meets the highest standards of superior taste. It’s not easy to meet the strict standards of Certified Angus Beef®. Less than 8% of all beef, and only 25% of Angus Cattle are worthy of this distinction. That’s why it’s known worldwide as the leader in taste and quality. It’s these standards, along side our unique grinding process that ensures the beef’s incredible flavor, keeping your burgers tender and juicy in every bite.
+  short-description: Less than 8% of all beef, and only 25% of Angus Cattle are worthy of the standard Certified Angus Beef®. This ensures the beef’s incredible flavor, keeping your burgers tender and juicy in every bite.
+  packaging: 'images/packaging/package-the-cab-all-american.png'
+  keywords: 'Burgers, Hamburgers, Schweid and Sons, Burger Maker, Ground Beef, The Very Best Burger, Purveyors, Butcher, Gourmet Burger, Cheeseburgers, Blend, Grind, Certified Angus Beef, Chuck, Certified Angus Beef, High Marbling'

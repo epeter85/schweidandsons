@@ -1,0 +1,50 @@
+{% extends "_layout.html.twig" %}
+
+{% block title %}Schweid &amp; Sons - {{ product.name }}{% endblock title %}
+    
+    {% block keywords %}
+    <meta name="keywords" content="{{product.keywords}}">
+    {% endblock %}
+
+
+    {% block google %}
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="Schweid & Sons: {{product.name}}">
+    <meta itemprop="description" content="{{product.short-description}}">
+    <meta itemprop="image" content="{{ siteUrl}}/images/share/{{product.slug}}-GO.jpg">
+    {% endblock %}
+
+    {% block twitter %}
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="product">
+    <meta name="twitter:site" content="@publisher_handle">
+    <meta name="twitter:title" content="Schweid & Sons: {{product.name}}">
+    <meta name="twitter:description" content="{{product.short-description}}">
+    <meta name="twitter:creator" content="@author_handle">
+    <meta name="twitter:image" content="{{ siteUrl}}/images/share/{{product.slug}}-TW.jpg">
+    {% endblock %}
+    
+    {% block facebook %}
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Schweid & Sons: {{product.name}}" />
+    <meta property="og:type" content="product" />
+    <meta property="og:url" content="{{siteUrl}}/products/{{product.slug}}" /> 
+    <meta property="og:image" content="{{ siteUrl}}/images/share/{{product.slug}}-FB.jpg">
+    <meta property="og:description" content="{{product.short-description}}" /> 
+    <meta property="og:site_name" content="Schweid & Sons" />
+   <!-- <meta property="fb:admins" content="Facebook numeric ID" /> -->
+    {% endblock %}
+
+{% block content %}
+  <div class="product-media-query">
+    <article>
+      <div class="small-10 small-centered medium-7 large-6 columns">
+        <h1>{{ product.name }}</h1>
+        <p>{{ product.description }}</p>
+        <div class="packaging">
+            <img src="{{ siteUrl (  product.packaging   ) }}"/> 
+        </div>
+      </div>
+    </article>
+  </div>
+{% endblock %}
